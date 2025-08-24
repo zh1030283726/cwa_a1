@@ -2,8 +2,8 @@
 
 export default function About() {
   // Replace with your details
-  const STUDENT_NAME = "YOUR_NAME"
-  const STUDENT_NUMBER = "YOUR_STUDENT_NUMBER"
+  const STUDENT_NAME = "Cheung Chak Lam"
+  const STUDENT_NUMBER = "20839934"
 
   return (
     <div className="max-w-4xl mx-auto">

@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Cookies from 'js-cookie'
-import ThemeToggle from './ThemeToggle'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -72,7 +71,6 @@ export default function Header() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <ThemeToggle />
             <div className="text-sm text-gray-600 dark:text-gray-400 hidden sm:block">
               {getBreadcrumbs()}
             </div>
