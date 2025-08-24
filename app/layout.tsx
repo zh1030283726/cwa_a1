@@ -36,7 +36,6 @@ export default function RootLayout({
         <ThemeProvider>
           <div className="min-h-screen flex flex-col transition-colors duration-300">
             <div className="pointer-events-none fixed bottom-4 left-4 z-50 bg-gray-800 text-white px-3 py-1 rounded shadow-lg">
-              Student: {STUDENT_NUMBER}
             </div>
             <Header />
             <main className="flex-grow container mx-auto px-4 py-8 mt-16">

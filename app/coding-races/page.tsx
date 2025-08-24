@@ -6,7 +6,7 @@ export default function CodingRacesPage() {
         <div className="bg-yellow-50 dark:bg-yellow-900 rounded-lg p-6">
           <h2 className="text-2xl font-semibold mb-4">Coming Soon!</h2>
           <p className="text-gray-700 dark:text-gray-300 mb-4">
-            This feature is currently under development and will be available in Assignment 2.
+            This feature is currently under development and will be available in future.
           </p>
           <p className="text-gray-600 dark:text-gray-400">
             The Coding Races Generator will allow you to create competitive coding challenges with:

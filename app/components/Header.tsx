@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Cookies from 'js-cookie'
 
+const STUDENT_NUMBER = '20839934'
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
@@ -67,7 +69,7 @@ export default function Header() {
               </svg>
             </Link>
             
-            <div className="text-lg font-semibold">HTML5 Generator</div>
+            <div className="text-lg font-semibold">Student: {STUDENT_NUMBER} | HTML5 Generator</div>
           </div>
 
           <div className="flex items-center space-x-4">

@@ -49,7 +49,7 @@ export default function Home() {
               Generate escape room puzzles and interactive challenges.
             </p>
             <span className="inline-block mt-3 text-gray-400 font-medium">
-              Assignment 2
+              Will be avalible in future.
             </span>
           </div>
         </Link>
@@ -64,7 +64,7 @@ export default function Home() {
               Create coding challenges and race timers.
             </p>
             <span className="inline-block mt-3 text-gray-400 font-medium">
-              Assignment 2
+              Will be avalible in future.
             </span>
           </div>
         </Link>
@@ -79,7 +79,7 @@ export default function Home() {
               Generate court room scenarios and debate structures.
             </p>
             <span className="inline-block mt-3 text-gray-400 font-medium">
-              Assignment 2
+              Will be avalible in future.
             </span>
           </div>
         </Link>
