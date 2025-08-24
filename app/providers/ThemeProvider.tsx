@@ -12,8 +12,14 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 function applyTheme(t: Theme) {
   // Keep it CSS-driven
-  document.documentElement.setAttribute('data-theme', t)
-  document.documentElement.classList.toggle('dark', t === 'dark')
+  const root = document.documentElement
+  root.classList.toggle('dark', t === 'dark')
+  if (t === 'dark') {
+    root.setAttribute('data-theme', 'dark')
+  } 
+  else {
+    root.removeAttribute('data-theme')
+  }
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
@@ -24,7 +30,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const system: Theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
     const initial = (saved ?? system) as Theme
     setTheme(initial)
-    applyTheme(initial)
 
     // Update with system changes if user hasn't explicitly chosen a theme
     const mq = window.matchMedia('(prefers-color-scheme: dark)')
@@ -33,18 +38,21 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       if (!hasSaved) {
         const sys: Theme = mq.matches ? 'dark' : 'light'
         setTheme(sys)
-        applyTheme(sys)
       }
     }
     mq.addEventListener?.('change', onChange)
     return () => mq.removeEventListener?.('change', onChange)
   }, [])
+  useEffect(() => {
+    applyTheme(theme)
+  }, [theme])
 
   const toggleTheme = () => {
-    const next = theme === 'light' ? 'dark' : 'light'
-    setTheme(next)
-    localStorage.setItem('theme', next)
-    applyTheme(next)
+    setTheme(prev => {
+      const next = prev === 'light' ? 'dark' : 'light'
+      localStorage.setItem('theme', next)
+      return next
+    })
   }
 
   return (

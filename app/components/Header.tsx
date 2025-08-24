@@ -59,6 +59,7 @@ export default function Header() {
             {/* Home Button */}
             <Link 
               href="/" 
+              aria-label="Go to homepage"
               className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
               aria-label="Go to homepage"
             >
