@@ -27,9 +27,8 @@ export default function About() {
           <div className="relative pb-[56.25%] h-0">
             <iframe 
               className="absolute top-0 left-0 w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              src="https://youtu.be/5f2p-a_Kd5w"
               title="How to use HTML5 Code Generator"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />

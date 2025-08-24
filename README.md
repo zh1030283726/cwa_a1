@@ -39,4 +39,4 @@ npm run dev
 4. Use the generated HTML anywhere!
 
 ### Video Tutorial
-[Link to video demonstration]
+[Link to video demonstration](https://youtu.be/5f2p-a_Kd5w)
