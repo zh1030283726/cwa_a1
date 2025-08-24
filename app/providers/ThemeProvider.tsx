@@ -26,9 +26,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('light')
 
   useEffect(() => {
-    const saved = (localStorage.getItem('theme') as Theme) || null
+    const saved = localStorage.getItem('theme') as Theme | null
     const system: Theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-    const initial = (saved ?? system) as Theme
+    const initial = saved ?? system
     setTheme(initial)
 
     // Update with system changes if user hasn't explicitly chosen a theme

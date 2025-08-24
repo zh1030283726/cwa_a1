@@ -61,7 +61,6 @@ export default function Header() {
               href="/" 
               aria-label="Go to homepage"
               className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-              aria-label="Go to homepage"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 

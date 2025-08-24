@@ -55,7 +55,7 @@ export default function About() {
             <li>Visit the Tabs Generator to create custom tab components</li>
             <li>Add up to 15 tabs with custom titles and content</li>
             <li>Your tab configurations are automatically saved in localStorage</li>
-            <li>Click "Copy Code" to get the generated HTML or "Download HTML" to save as file</li>
+            <li>Click &quot;Copy Code&quot; to get the generated HTML or &quot;Download HTML&quot; to save as file</li>
             <li>The generated code is completely standalone - no CSS classes, only inline styles!</li>
           </ol>
 

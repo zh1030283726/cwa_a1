@@ -23,9 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="transition-colors duration-300">
-      <body className={`${inter.className} min-h-screen transition-colors duration-300`} suppressHydrationWarning>
+      <body className={`${inter.className} min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300`} suppressHydrationWarning>
         <ThemeProvider>
-          <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+          <div className="min-h-screen flex flex-col transition-colors duration-300">
             <div className="pointer-events-none fixed bottom-4 left-4 z-50 bg-gray-800 text-white px-3 py-1 rounded shadow-lg">
               Student: {STUDENT_NUMBER}
             </div>
